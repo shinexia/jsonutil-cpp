@@ -1,8 +1,6 @@
-//
-// Created by shine on 3/21/19.
-//
+// Copyright (c) 2019 Shine Xia <shine.xgh@gmail.com>.
 
-#include "jsonutil/jsonutil.h"
+#include "jsonutil/jsonutil.hpp"
 
 std::string ToJSON(const std::string &v) { return "\"" + v + "\""; }
 

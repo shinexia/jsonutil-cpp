@@ -16,6 +16,6 @@ include_directories(${RAPIDJSON_ROOT_DIR}/include)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-add_library(jsonutil src/jsonutil.cpp include/jsonutil/jsonutil.h)
+add_library(jsonutil src/jsonutil.cpp include/jsonutil/jsonutil.hpp)
 
 add_subdirectory(example)

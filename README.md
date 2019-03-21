@@ -11,14 +11,12 @@
 
 ```cpp
 
-class Person {
-public:
+struct Person {
     int ID;
     std::string Name;
 };
 
-class Room {
-public:
+struct Room {
     std::shared_ptr<Person> Teacher;
     std::vector<Person> Students;
 };

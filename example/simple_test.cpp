@@ -1,19 +1,15 @@
-//
-// Created by shine on 3/21/19.
-//
+// Copyright (c) 2019 Shine Xia <shine.xgh@gmail.com>
 
-#include "jsonutil/jsonutil.h"
+#include "jsonutil/jsonutil.hpp"
 #include <iostream>
 #include <cstdlib>
 
-class Person {
-public:
+struct Person {
     int ID;
     std::string Name;
 };
 
-class Room {
-public:
+struct Room {
     std::shared_ptr<Person> Teacher;
     std::vector<Person> Students;
 };

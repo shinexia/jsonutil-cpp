@@ -1,6 +1,4 @@
-//
-// Created by shine on 3/21/19.
-//
+// Copyright (c) 2019 Shine Xia <shine.xgh@gmail.com>
 
 #ifndef JSONUTIL_JSONUTIL_H
 #define JSONUTIL_JSONUTIL_H
