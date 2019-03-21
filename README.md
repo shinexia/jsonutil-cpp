@@ -62,19 +62,8 @@ int FromJSON(const rapidjson::Value& in, Room& out) {
 
 ```
 std::unique_ptr<Room> room(new Room());
-std::shared_ptr<Person> teacher(new Person());
-teacher->ID = 0;
-teacher->Name = "teacher";
-std::vector<Person> students(3);
-for (int i =0; i< students.size(); ++i) {
-    auto& student = students[i];
-    student.ID = i;
-    char buf[40];
-    sprintf(buf, "student:%d", i);
-    student.Name = buf;
-}
-room->Teacher = std::move(teacher);
-room->Students = std::move(students);
+
+// initializing
 
 std::string json = ToPrettyJSON(room);
 
@@ -112,5 +101,3 @@ std::cout << json << std::endl;
 std::shared_ptr<Room> room2;
 int ret = ParseJSON(json, room2);
 ```
-
-
